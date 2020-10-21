@@ -1,0 +1,14 @@
+- hosts: all
+  tasks:
+    - name: Hola Mundo
+      debug: 
+        msg: Hola Mundo
+        
+    - name: Crear usuario
+      user:
+        name: ivan
+        state: present
+        
+    - name: a10 Mundo
+      debug: 
+        msg: a10 Mundo
