@@ -16,6 +16,7 @@
         name: ivan
         state: present
       notify: usuariocreado
+      changed_when: False
         
     - name: Caracteristicas de la máquina
       debug: 
@@ -23,7 +24,7 @@
     
     - name: Adios mundo!!!
       debug: 
-        msg: Adios mundo 
+        msg: "Adios {{ persona }}"
       tags:
         - saludo
         - despedida
@@ -37,4 +38,5 @@
       debug: 
         msg: Soy el handler 2
       listen: usuariocreado
+
 
