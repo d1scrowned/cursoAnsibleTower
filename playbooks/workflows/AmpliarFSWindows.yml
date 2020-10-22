@@ -1,5 +1,6 @@
+  
 - hosts: all
-
+  
   tasks:
-      debug: 
-        msg: Soy la tarea de ampliacion FS en RHEL
+    - debug:
+        msg: Soy la tarea de ampliacion FS WINDOWS
